@@ -7,11 +7,25 @@
 </head>
 <body>
   <div id="root"></div>
-  <script>
+  <!-- by html -->
+  <!-- <h1>Hello world by Html</h1> -->
+
+  <!-- by javascript -->
+  <!-- <script>
    const heading = document.createElement("h1");
    heading.innerText = "Hello World by javascript";
     const devElement = document.getElementById("root");
     devElement.appendChild(heading);
+  </script> -->
+
+  <!-- by react cdm -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <script>
+    const heading = React.createElement("h1", {}, "Hello world by react")
+    const root = ReactDOM.createRoot(document.getElementById("root"))
+    root.render(heading)
   </script>
 </body>
 </html>
