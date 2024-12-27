@@ -6,6 +6,12 @@
   <title>The Namaste Coding..</title>
 </head>
 <body>
-  <h1>Hello Namaste coding</h1>
+  <div id="root"></div>
+  <script>
+   const heading = document.createElement("h1");
+   heading.innerText = "Hello World by javascript";
+    const devElement = document.getElementById("root");
+    devElement.appendChild(heading);
+  </script>
 </body>
 </html>
